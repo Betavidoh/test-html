@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Music Database</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+
+<h1>Music Database</h1>
+
+<input type="text" id="search" placeholder="Search for artists or titles..." onkeyup="searchDatabase()">
+
+<table id="musicTable">
+    <thead>
+        <tr>
+            <th>Artist</th>
+            <th>Title</th>
+            <th>Tracks</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+			<br>10,000 Maniacs</br>	
+			<br>In My Tribe</br>	
+			<br>TEST</br>
+		</tr>
+		<tr>
+			<br>10,000 Maniacs</br>	
+			<br>MTV Unplugged</br>	
+			<br>TEST</br>
+		</tr>
+		<tr>
+			<br>AC/DC</br>	
+			<br>74 Jailbreak</br>	
+			<br>TEST</br>
+		</tr>
+		<tr>
+			<br>AC/DC</br>	
+			<br>Back in Black</br>	
+			<br>TEST</br>
+		</tr>
+		<tr>
+<br>AC/DC</br>	
+<br>Ballbreaker</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>AC/DC</br>	
+<br>Blow Up Your Video</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>AC/DC</br>	
+<br>Flick of the Switch</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>AC/DC</br>	
+<br>Fly On The Wall</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>AC/DC</br>	
+<br>For Those About to Rock (We Salute You)</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>AC/DC</br>	
+<br>High Voltage</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>AC/DC</br>	
+<br>Highway to Hell</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>AC/DC</br>	
+<br>Let There Be Rock</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>AC/DC</br>	
+<br>Who Made Who</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>AFI</br>	
+<br>Sing the Sorrow</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Aimee Mann</br>	
+<br>Lost in Space</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Aimee Mann</br>	
+<br>The Forgotten Arm</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Alanis Morissette</br>	
+<br>Ironic</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Alanis Morissette</br>	
+<br>Jagged Little Pill</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Alanis Morissette</br>	
+<br>Supposed Former Infatuation Junkie</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Alecia Elliott</br>	
+<br>I'm Diggin' It (HDCD)</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Alice Cooper</br>	
+<br>Hey Stoopid</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Alisha's Attic</br>	
+<br>Alisha Rules the World</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Alison Krauss</br>	
+<br>A Hundred Miles or More： A Collection</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Alison Krauss & Union Station</br>	
+<br>Paper Airplane</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Alison Krauss & Union Station</br>	
+<br>So Long So Wrong</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Amanda Marshall</br>	
+<br>Amanda Marshall</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>American Gothic</br>	
+<br>American Gothic</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Angels & Airwaves</br>	
+<br>We Don't Need to Whisper</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Anna Nalick</br>	
+<br>At Now</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Anna Ternheim</br>	
+<br>Escape Into My Arms</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Anna Ternheim</br>	
+<br>Leaving on a Mayday</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Anna Ternheim</br>	
+<br>Leaving on a Mayday - Sings Sinatra</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Anna Ternheim</br>	
+<br>Separation Road</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Anna Ternheim</br>	
+<br>Separation Road - Naked Versions II</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Anna Ternheim</br>	
+<br>Somebody Outside</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Anna Ternheim</br>	
+<br>Somebody Outside - Naked Versions</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Anouk</br>	
+<br>Lost Tracks</br>	
+<br>TEST</br>
+		</tr>
+		<tr>
+<br>Anouk</br>	
+<br>Who's Your Momma</br>	
+<br>TEST</br>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    function searchDatabase() {
+        const input = document.getElementById('search').value.toLowerCase();
+        const table = document.getElementById('musicTable');
+        const tr = table.getElementsByTagName('tr');
+
+        for (let i = 1; i < tr.length; i++) {
+            const tdArtist = tr[i].getElementsByTagName('td')[0];
+            const tdTitle = tr[i].getElementsByTagName('td')[1];
+            if (tdArtist || tdTitle) {
+                const artistText = tdArtist.textContent || tdArtist.innerText;
+                const titleText = tdTitle.textContent || tdTitle.innerText;
+                if (artistText.toLowerCase().indexOf(input) > -1 || titleText.toLowerCase().indexOf(input) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }       
+        }
+    }
+</script>
+
+</body>
+</html>
