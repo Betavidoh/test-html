@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Music Database</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+
+<h1>Music Database</h1>
+
+<input type="text" id="search" placeholder="Search for artists or titles..." onkeyup="searchDatabase()">
+
+<table id="musicTable">
+    <thead>
+        <tr>
+            <th>Artist</th>
+            <th>Title</th>
+            <th>Tracks</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>The Beatles</td>
+            <td>Abbey Road</td>
+            <td>Come Together, Something, Here Comes the Sun</td>
+        </tr>
+        <tr>
+            <td>Queen</td>
+            <td>A Night at the Opera</td>
+            <td>Bohemian Rhapsody, You're My Best Friend</td>
+        </tr>
+        <tr>
+            <td>Michael Jackson</td>
+            <td>Thriller</td>
+            <td>Billie Jean, Beat It, Thriller</td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    function searchDatabase() {
+        const input = document.getElementById('search').value.toLowerCase();
+        const table = document.getElementById('musicTable');
+        const tr = table.getElementsByTagName('tr');
+
+        for (let i = 1; i < tr.length; i++) {
+            const tdArtist = tr[i].getElementsByTagName('td')[0];
+            const tdTitle = tr[i].getElementsByTagName('td')[1];
+            if (tdArtist || tdTitle) {
+                const artistText = tdArtist.textContent || tdArtist.innerText;
+                const titleText = tdTitle.textContent || tdTitle.innerText;
+                if (artistText.toLowerCase().indexOf(input) > -1 || titleText.toLowerCase().indexOf(input) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }       
+        }
+    }
+</script>
+
+</body>
+</html>
